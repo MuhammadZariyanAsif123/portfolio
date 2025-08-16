@@ -60,7 +60,7 @@ function Hero() {
               width={1024}
               height={1024}
               alt="Muhammad Zariyan Asif"
-              src={`${getImagePrefix()}image/MZariyanAsif.jpeg`}
+              src={`/image/MZariyanAsif.jpeg`}
               className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] rounded-2xl object-cover shadow-2xl border-4 border-white/80"
             />
           </motion.div>

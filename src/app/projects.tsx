@@ -14,25 +14,25 @@ import "swiper/css/pagination";
 
 const PROJECTS = [
   {
-    img: `${getImagePrefix()}image/Project1.jpg`,
+    img: `/image/Project1.jpg`,
     title: "Adbotai.org",
     link: "https://adbotai.org",
     color: "text-[white]",
   },
   {
-    img: `${getImagePrefix()}image/Project2.jpg`,
+    img: `/image/Project2.jpg`,
     title: "FrankWoodSon",
     link: "https://www.frankwoodson.com/",
     color: "text-[black]",
   },
   {
-    img: `${getImagePrefix()}image/Project3.jpg`,
+    img: `/image/Project3.jpg`,
     title: "Techinoid LLC",
     link: "https://www.techinoid.com/",
     color: "text-[black]",
   },
   {
-    img: `${getImagePrefix()}image/Project4.jpg`,
+    img: `/image/Project4.jpg`,
     title: "CodeAutomation.ai",
     link: "https://codeautomation.ai/",
     color: "text-[yellow]",
