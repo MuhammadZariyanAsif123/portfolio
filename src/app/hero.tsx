@@ -49,19 +49,52 @@ function Hero() {
           </motion.div>
 
           {/* Right Image Section */}
+
+          {/* Right Image Section */}
           <motion.div
-            className="flex justify-center lg:justify-end"
+            className="relative flex justify-center lg:justify-end"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
             whileHover={{ scale: 1.03, rotate: 1 }}
           >
+            {/* Outer Glow Aura */}
+            <motion.div
+              className="absolute rounded-[40px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-3xl"
+              style={{ width: "110%", height: "110%" }}
+              animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.6, 0.3] }}
+              transition={{ duration: 6, repeat: Infinity }}
+            ></motion.div>
+
+            {/* Rotating Gradient Border */}
+            <motion.div
+              className="absolute p-1 rounded-[40px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-indigo-500"
+              style={{ width: "100%", height: "100%" }}
+              animate={{ rotate: 360 }}
+              transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            >
+              <div className="w-full h-full rounded-[40px] bg-white"></div>
+            </motion.div>
+
+            {/* Pulsing Inner Border */}
+            <motion.div
+              className="absolute rounded-[40px] border-2 border-indigo-400 opacity-60"
+              style={{ width: "105%", height: "105%" }}
+              animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.5, 0.2] }}
+              transition={{ duration: 5, repeat: Infinity }}
+            ></motion.div>
+
+            {/* Profile Image with Stylish Rounded Corners */}
             <Image
               width={1024}
               height={1024}
               alt="Muhammad Zariyan Asif"
               src={`/image/MZariyanAsif.jpeg`}
-              className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[500px] rounded-2xl object-cover shadow-2xl border-4 border-white/80"
+              className="
+      relative z-10 w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[500px]
+      rounded-tl-[100px] rounded-tr-[40px] rounded-br-[100px] rounded-bl-[40px]
+      object-cover shadow-2xl border-4 border-white/80
+    "
             />
           </motion.div>
         </div>

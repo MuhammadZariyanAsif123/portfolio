@@ -57,8 +57,10 @@ export function Skills() {
       className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-16"
     >
       {/* Modern vibrant gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400
-"></div>
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-indigo-600 via-blue-500 to-cyan-400
+"
+      ></div>
 
       {/* Decorative blurred shapes matching gradient */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
@@ -102,12 +104,8 @@ export function Skills() {
               key={idx}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: idx * 0.15 }}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 0 20px rgba(0,0,0,0.15)",
-              }}
-              className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg border border-white/40 hover:shadow-2xl transition-all duration-300"
+             
+              className="bg-white/80 backdrop-blur-lg rounded-xl shadow-lg border border-white/40 hover:shadow-2xl "
             >
               <SkillCard {...props} />
             </motion.div>
